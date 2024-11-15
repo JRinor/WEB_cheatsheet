@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <h1>CheatSheet By Rinor</h1>
+    <a href="../index.html">Acceuil</a>
+    <a href="https://github.com/JRinor/WEB_cheatsheet.git" >
+        <img src="../images/github_icon.png" alt="Icon github" /> GitHub
+    </a>
+    
+</header>
+<body>
+    <H1>Cheatsheet Commandes Linux</H1>
+    <div>
+        <h2>Navigation dans le système de fichiers</h2>
+        <ul>
+            <li> <strong>pwd  : Affiche le chemin du répertoire courant.</strong></li>
+            <li>
+                <strong>[options] [chemin]  : Liste le contenu d'un répertoire. </strong>
+            <ul>
+                • Options :
+                    <ul>
+                        <em>
+                        <li> -l  : Format long.</li>
+                        <li> -a  : Affiche les fichiers cachés.</li>
+                        <li> -h  : Tailles lisibles par l'homme.</li>
+                        <li> -R  : Récursif.</li>
+                        </em>
+                    </ul>
+            </ul>
+            </li>
+            <li>
+                <strong>cd [chemin]  : Change le répertoire courant.</strong>
+                <ul>
+                    Raccourcis :
+                    <ul>
+                        <em>
+                        <li> cd -  : Retourne au répertoire précédent.</li>
+                        <li> cd ~  ou  cd  : Accède au répertoire personnel.</li>
+                        <li> cd /  : Accède à la racine.</li>
+                        </em>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Gestion des fichiers et répertoires</h2>
+        <ul>
+            <li><strong> touch [options] <fichier>  : Crée un fichier vide ou met à jour l'horodatage.</strong></li>
+            <li><strong> cat [options] <fichier>  : Affiche le contenu d'un fichier.</strong>
+                <ul>
+                    Options :
+                    <ul>
+                        <li> -n  : Numérote les lignes.</li>
+                        <li> -A  : Affiche les caractères non imprimables.</li>
+                    </ul>
+                </ul>
+            </li>
+            <li>
+                <strong>cp [options] <source> <destination>  : Copie fichiers et répertoires.</strong>
+                <ul>
+                    Options :
+                    <ul>
+                        <em>
+                        <li> -n  : Numérote les lignes.</li>
+                        <li> -A  : Affiche les caractères non imprimables.</li>
+                        </em>
+                    </ul>
+                </ul>
+            </li>
+            <li>
+                <strong>mv [options] <source> <destination>  : Déplace ou renomme.</strong>
+                <ul>
+                    Options :
+                    <ul>
+                        <em>
+                        <li> -i  : Interactif.</li>
+                        <li> -u  : Met à jour.</li>
+                        </em>
+                    </ul>
+                </ul>
+            </li>
+            <li>
+                <strong>rm [options] <fichier/répertoire>  : Supprime fichiers ou répertoires.</strong>
+                <ul>
+                    Options :
+                    <ul>
+                        <em>
+                        <li> -r  : Récursif.</li>
+                        <li> -f  : Force la suppression sans confirmation.</li>
+                        <li> -i  : Interactif.</li>
+                        </em>
+                    </ul>
+                </ul>
+            </li>
+            <li>
+                <strong>mkdir [options] <nom_répertoire>  : Crée un nouveau répertoire.</strong>
+                <ul>
+                    Options :
+                    <ul>
+                        <em>
+                        <li> -p</li>
+                        </em>
+                    </ul>
+                </ul>
+            </li>
+            <li> <strong>awk '{print $1}' <fichier>  : Traitement de texte avancé.</strong></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Manipulation de texte et recherche</h2>
+        <ul>
+            <li>
+                <strong>grep [options] <motif> <fichier>  : Recherche un motif dans un fichier.</strong>
+                <ul>
+                    Options :
+                    <ul>
+                        <em>
+                        <li> -i  : Insensible à la casse.</li>
+                        <li> -r  : Récursif.</li>
+                        <li> -n  : Affiche les numéros de ligne.</li>
+                        </em>
+                    </ul>
+                </ul>
+            </li>
+            <li> <strong>sed 's/ancien/nouveau/g' <fichier>  : Remplace du texte dans un fichier.</strong></li>
+            <li> <strong>awk '{print $1}' <fichier>  : Traitement de texte avancé.</strong></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Gestion des processus et ressources</h2>
+        <ul>
+            <li>
+                <strong>ps [options]  : Affiche les processus en cours.</strong>
+                <ul>
+                    Exemple :
+                    <ul>
+                        <em>
+                        <li> ps aux </li>
+                        </em>
+                    </ul>
+                </ul>
+            </li>
+            <li> <strong>top  ou  htop  : Affiche les processus en temps réel.</strong></li>
+            <li> <strong>kill [signal] <PID>  : Envoie un signal à un processus.</strong></li>
+            <li> <strong>free -h  : Affiche l'utilisation de la mémoire.</strong></li>
+            <li> <strong>df -h  : Affiche l'utilisation de l'espace disque.</strong></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Réseau</h2>
+        <ul>
+            <li> <strong>ifconfig  ou  ip addr  : Affiche la configuration réseau.</strong></li>
+            <li> <strong>ping <hôte>  : Teste la connectivité avec un hôte.</strong></li>
+            <li> <strong>netstat -tuln  : Affiche les connexions réseau actives.</strong></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Gestion des utilisateurs et permissions</h2>
+        <ul>
+            <li> <strong>sudo <commande>  : Exécute une commande avec des privilèges root.</strong></li>
+            <li> <strong>chmod [options] <permissions> <fichier>  : Modifie les permissions d'un fichier.</strong></li>
+            <li> <strong>chown [options] <utilisateur>:<groupe> <fichier>  : Change le propriétaire d'un fichier.</strong></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Autres commandes utiles</h2>
+        <ul>
+            <li> <strong>man <commande>  : Affiche le manuel d'une commande.</strong></li>
+            <li> <strong>history  : Affiche l'historique des commandes.</strong></li>
+            <li> 
+                <strong>tar [options] <archive> <fichiers>  : Crée ou extrait des archives.</strong>
+                <ul>
+                    Exemple :
+                    <ul>
+                        <em>
+                        <li> find /home -name "*.txt" .</li>
+                        </em>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
